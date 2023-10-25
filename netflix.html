@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="stylenetflix1.css" />
+  </head>
+  <body>
+
+
+
+    <header class="navbar">
+      <div class="logo"></div>
+      <img class="nav__logo" src="netflix.png" alt="" />
+      <nav>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">TV Shows</a></li>
+              <li><a href="#">Movies</a></li>
+              <li><a href="#">New and Popular</a></li>
+              <li><a href="#">My List</a></li>
+              <li><a href="#">Browse by languages</a></li>
+          </ul>
+      </nav>
+  </header>
+
+    <!-- header -->
+    <header class="nf">
+      <div class="main">
+        <h1 class="heading">GILMORE GIRLS</h1>
+        <div class="banner__buttons">
+          <button class="head_button">Play</button>
+          <button class="head_button">More Info</button>
+        </div>
+        <h1 class="head_desc">
+            Tale of Rory and Lorelai Gilmore on how they take over their life.
+        </h1>
+
+      </div>
+      <div class="head_fade"></div>
+    </header>
+
+    <!-- Trending Now -->
+    <div class="part">
+      <h2>Trending Now</h2>
+      <div class="part_div">
+        <img class="part__poster" src="lockwood.jpg" alt="" />
+
+        <img class="part__poster" src="instant family.jpg" alt="" />
+
+        <img class="part__poster" src="queens gambit1.jpg" alt="" />
+
+        <img class="part__poster" src="demon slayer.jpg" alt="" />
+
+        <img class="part__poster" src="dr stone.jpeg" alt="" />
+
+        <img class="part__poster" src="top gun.jpg" alt="" />        
+      </div>
+    </div>
+
+    <!-- Action Movies -->
+    <div class="part">
+      <h2>Anime</h2>
+      <div class="part_div">
+        <img class="part__poster" src="dr stone.jpeg" alt="" />
+
+        <img class="part__poster" src="demon slayer.jpg" alt="" />
+
+        <img class="part__poster" src="spyxfamily.webp" alt="" />
+
+        <img class="part__poster" src="one piece.jpg" alt="" />
+
+        <img class="part__poster" src="buddy daddies.jpe" alt="" />
+      </div>
+    </div>
+
+    <!-- Comedy Movies -->
+    <div class="part">
+      <h2>Hindi Movies</h2>
+      <div class="part_div">
+        <img class="part__poster" src="k3g.jpg" alt="" />
+
+        <img class="part__poster" src="dil chahta hai.jpg" alt="" />
+
+        <img class="part__poster" src="dream girl.webp" alt="" />
+
+        <img class="part__poster" src="dostana.jpg" alt="" />
+
+        <img class="part__poster" src="pyaar ka punchnama.jpg" alt="" />
+
+      </div>
+    </div>
+
+
+    <script>
+      const nav = document.getElementById('nav');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY >= 100) {
+          nav.classList.add('nav__black');
+        } else {
+          nav.classList.remove('nav__black');
+        }
+      });
+    </script>
+  </body>
+</html>
